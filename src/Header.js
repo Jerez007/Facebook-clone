@@ -23,13 +23,13 @@ function Header() {
         <img src={FacebookLogo} alt="facebook logo"/>
         <div className="header__input">
           <SearchIcon />
-          <input type="text"/>
+          <input type="text" placeholder="Search Facebook"/>
         </div> 
       </div>
 
       {/* header middle ection */}
       <div className="header__center">
-        <div className="header__option">
+        <div className="header__option header__option--active">
           <HomeIcon fontSize="large"/>
         </div>
 
