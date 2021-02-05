@@ -1,21 +1,29 @@
-import { SignalCellularConnectedNoInternet0Bar } from '@material-ui/icons';
-import React from 'react';
-import './App.css';
-import Header from './Header';
-import Sidebar from './Sidebar';
-import Feed from './Feed';
+import React from "react";
+import "./App.css";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
+import Feed from "./Feed";
+import Widgets from "./Widgets";
+import Login from './Login';
 
 function App() {
+  const user = null;
+
   return (
     <div className="app">
-      <Header />
+      {!user ? (
+        <Login />
+      ) : (
+        <>
+          <Header />
 
-      {/* App body */}
-      <div className="app__body">
-        <Sidebar />
-        <Feed />
-        {/* Widgets on the right */}
-      </div>
+          <div className="app__body">
+            <Sidebar />
+            <Feed />
+            <Widgets />
+          </div>
+        </>
+      )}
     </div>
   );
 }

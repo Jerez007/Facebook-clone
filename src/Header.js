@@ -1,6 +1,5 @@
 import React from 'react'
 import './Header.css';
-import FacebookLogo from './images/facebook_logo.png';
 import SearchIcon from '@material-ui/icons/Search';
 import HomeIcon from '@material-ui/icons/Home';
 import FlagIcon from '@material-ui/icons/Flag';
@@ -20,36 +19,38 @@ function Header() {
     <div className="header">
       {/* header left section */}
       <div className="header__left">
-        <img src={FacebookLogo} alt="facebook logo"/>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/800px-Facebook_Logo_%282019%29.png"
+          alt="facebook logo"
+        />
         <div className="header__input">
           <SearchIcon />
-          <input type="text" placeholder="Search Facebook"/>
-        </div> 
+          <input type="text" placeholder="Search Facebook" />
+        </div>
       </div>
 
       {/* header middle ection */}
       <div className="header__center">
         <div className="header__option header__option--active">
-          <HomeIcon fontSize="large"/>
+          <HomeIcon fontSize="large" />
         </div>
 
         <div className="header__option">
-          <FlagIcon fontSize="large"/>
-        </div>  
+          <FlagIcon fontSize="large" />
+        </div>
 
         <div className="header__option">
-          <SubscriptionsOutlinedIcon fontSize="large"/>
-        </div>   
+          <SubscriptionsOutlinedIcon fontSize="large" />
+        </div>
 
         <div className="header__option">
-          <StorefrontOutlinedIcon fontSize="large"/>
-        </div>   
+          <StorefrontOutlinedIcon fontSize="large" />
+        </div>
 
         <div className="header__option">
-          <SupervisedUserCircleIcon fontSize="large"/>
-        </div>                                 
+          <SupervisedUserCircleIcon fontSize="large" />
+        </div>
       </div>
-      
 
       <div className="header__right">
         <div className="header__info">
@@ -71,9 +72,7 @@ function Header() {
 
         <IconButton>
           <ExpandMoreIcon />
-        </IconButton>                
-
-
+        </IconButton>
       </div>
     </div>
   );
